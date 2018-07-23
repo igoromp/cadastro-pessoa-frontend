@@ -1,0 +1,42 @@
+<h2 class="text-center">Lista de Pessoas</h2>
+<div class="wrapper-profissao"
+	ng-controller="PessoasCtrl as pessoas">
+	<div class="row">
+		<div class="col-md-12 text-right">
+			<button class="btn btn-primary " ng-click="getPessoas()">Carregar
+				Pessoas</button>
+		</div>
+	</div><br />
+	<div class="row">
+		<div class="col-md-12">
+			<div class="table-responsive">
+				<div class="panel panel-default">
+					<div class="panel-heading">Pessoas</div>
+
+					<div class="panel-body">
+						<table class="table table-bordered table-striped table-hover">
+							<thead>
+								<tr>
+									<th>Nome</th>
+									<th>CPF</th>
+									<th>Email</th>
+									<th>Telefone</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="pessoa in list">
+									<td>{{pessoa.nome}}</td>
+									<td>{{pessoa.cpf}}</td>
+									<td>{{pessoa.email}}</td>
+									<td>{{pessoa.telefone}}</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+

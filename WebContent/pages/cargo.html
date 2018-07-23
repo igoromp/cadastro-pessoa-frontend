@@ -1,0 +1,36 @@
+<h2 class="text-center">Lista de Cargos</h2>
+<div class="wrapper-profissao"
+	ng-controller="CargoCtrl as crtl">
+	<div class="row">
+		<div class="col-md-12 text-right">
+			<button class="btn btn-primary " ng-click="getCargos()">Carregar
+				Cargos</button>
+		</div>
+	</div><br />
+	<div class="row">
+		<div class="col-md-12">
+			<div class="table-responsive">
+				<div class="panel panel-default">
+					<div class="panel-heading">Cargos</div>
+
+					<div class="panel-body">
+						<table class="table table-bordered table-striped table-hover">
+							<thead>
+								<tr>
+									<th>Descrição</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="cargo in cargos">
+									<td>{{cargo.desc}}</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+

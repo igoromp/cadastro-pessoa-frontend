@@ -1,0 +1,18 @@
+.navbar-default.bg-blue{
+	background:rgba(51,103,214);
+	
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover,
+.navbar-default ul.navbar-nav >li >a{
+	color:#FFF;
+	transition: background 0.2s linear;
+}
+.navbar-default ul.navbar-nav >li >a{
+	font-weight: bold;
+}
+.navbar-default ul.navbar-nav >li >a:hover{
+	color:rgba(51,103,175);
+	background: #fff;
+}

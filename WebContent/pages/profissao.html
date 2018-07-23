@@ -1,0 +1,57 @@
+<h2 class="text-center">Lista de Profissionais</h2>
+<div class="wrapper-profissao"	ng-controller="ProfissaoCtrl as profissao">
+	<div class="row">
+		<div class="col-md-12 text-right">
+			<button class="btn btn-primary " ng-click="getProfissoes()">Carregar
+				Profissionais</button>
+		</div>
+	</div><br />
+	<div class="row">
+		<div class="col-md-12">
+			<div class="table-responsive">
+				<div class="panel panel-default">
+					<div class="panel-heading">Profissionais</div>
+
+					<div class="panel-body">
+						<table class="table table-bordered table-striped table-hover">
+							<thead>
+								<tr>
+									<th>Nome</th>
+									<th>CPF</th>
+									<th>Email</th>
+									<th>Telefone</th>
+									<th>Cargo</th>
+									<th>Linguagem</th>
+									<th>Ações (Em Desenvolvimento)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="prof in profissionais">
+									<td>{{prof.pessoa.nome}}</td>
+									<td>{{prof.pessoa.cpf}}</td>
+									<td>{{prof.pessoa.email}}</td>
+									<td>{{prof.pessoa.telefone}}</td>
+									<td>{{prof.cargo.des}}</td>
+									<td>{{prof.linguagem.sgLinguagem}}</td>
+									<td>
+										<div class="col md-12">
+											<div class="col-md-6 text-right"><button class="btn btn-warning">Editar</button></div>
+											<div class="col-md-6"><button class="btn btn-danger">Deletar</button></div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><br />
+	<div class="row">
+		<div class="col-md-12">
+		</div>
+	</div>
+		
+</div>
+
+
